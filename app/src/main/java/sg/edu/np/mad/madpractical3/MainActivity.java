@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+        User user = new User("John Doe", "MAD Developer", 1, false);
         Intent receiveData = getIntent();
         int Id = 0;
         Id = receiveData.getIntExtra("Id", Id);
